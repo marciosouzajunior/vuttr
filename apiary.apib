@@ -1,14 +1,17 @@
 FORMAT: 1A
-HOST: https://polls.apiblueprint.org/
+HOST: https://localhost:3000/vuttr
 
 # VUTTR
 
 Um simples repositório para gerenciar ferramentas.
 
-## Ferramentas [/tools]
+## Ferramentas [/tools?tag={tag}]
 
 ### Listar todas as ferramentas [GET]
 
++ Parameters
+    + tag: `node` (string, optional) - tag sendo buscada
+    
 + Response 200 (application/json)
         
         [
@@ -75,3 +78,10 @@ Um simples repositório para gerenciar ferramentas.
             "tags":["node", "organizing", "webapps", "domain", "developer", "https", "proxy"],
             "id":5 // ou qualquer outro identificador
         }
+        
+### Remover uma ferramenta [DELETE /tools/{id}] 
+
++ Parameters
+    + id: `-MCcM0aEKIrmtf_kUNAG` (string, required) - id da ferramenta
+    
++ Response 204
