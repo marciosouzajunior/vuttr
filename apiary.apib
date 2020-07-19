@@ -57,10 +57,6 @@ Um simples repositório para gerenciar ferramentas.
 
 ### Cadastrar uma nova ferramenta [POST]
 
-You may create your own question using this action. It takes a JSON
-object containing a question and a collection of answers in the
-form of choices.
-
 + Request (application/json)
 
         {
@@ -72,15 +68,10 @@ form of choices.
 
 + Response 201 (application/json)
 
-    + Headers
-
-            Location: /questions/2
-
-    + Body
-
-            {
-                "title": "hotel",
-                "link": "https://github.com/typicode/hotel",
-                "description": "Local app manager. Start apps within your browser, developer tool with local .localhost domain and https out of the box.",
-                "tags":["node", "organizing", "webapps", "domain", "developer", "https", "proxy"]
-            }
+        {
+            "title": "hotel",
+            "link": "https://github.com/typicode/hotel",
+            "description": "Local app manager. Start apps within your browser, developer tool with local .localhost domain and https out of the box.",
+            "tags":["node", "organizing", "webapps", "domain", "developer", "https", "proxy"],
+            "id":5 // ou qualquer outro identificador
+        }
