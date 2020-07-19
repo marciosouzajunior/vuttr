@@ -1,0 +1,87 @@
+FORMAT: 1A
+HOST: https://localhost:3000/vuttr
+
+# VUTTR
+
+Um simples repositório para gerenciar ferramentas.
+
+## Ferramentas [/tools?tag={tag}]
+
+### Listar todas as ferramentas [GET]
+
++ Parameters
+    + tag: `node` (string, optional) - tag sendo buscada
+    
++ Response 200 (application/json)
+        
+        [
+            {
+                id: 1, // ou qualquer outro identificador
+                title: "Notion",
+                link: "https://notion.so",
+                description: "All in one tool to organize teams and ideas. Write, plan, collaborate, and get organized. ",
+                tags: [
+                    "organization",
+                    "planning",
+                    "collaboration",
+                    "writing",
+                    "calendar"
+                ]
+            },
+            {
+                id: 2,
+                title: "json-server",
+                link: "https://github.com/typicode/json-server",
+                description: "Fake REST API based on a json schema. Useful for mocking and creating APIs for front-end devs to consume in coding challenges.",
+                tags: [
+                    "api",
+                    "json",
+                    "schema",
+                    "node",
+                    "github",
+                    "rest"
+                ]
+            },
+            {
+                id: 3,
+                title: "fastify",
+                link: "https://www.fastify.io/",
+                description: "Extremely fast and simple, low-overhead web framework for NodeJS. Supports HTTP2.",
+                tags: [
+                    "web",
+                    "framework",
+                    "node",
+                    "http2",
+                    "https",
+                    "localhost"
+                ]
+            }
+        ]
+
+### Cadastrar uma nova ferramenta [POST]
+
++ Request (application/json)
+
+        {
+            "title": "hotel",
+            "link": "https://github.com/typicode/hotel",
+            "description": "Local app manager. Start apps within your browser, developer tool with local .localhost domain and https out of the box.",
+            "tags":["node", "organizing", "webapps", "domain", "developer", "https", "proxy"]
+        }
+
++ Response 201 (application/json)
+
+        {
+            "title": "hotel",
+            "link": "https://github.com/typicode/hotel",
+            "description": "Local app manager. Start apps within your browser, developer tool with local .localhost domain and https out of the box.",
+            "tags":["node", "organizing", "webapps", "domain", "developer", "https", "proxy"],
+            "id":5 // ou qualquer outro identificador
+        }
+        
+### Remover uma ferramenta [DELETE /tools/{id}] 
+
++ Parameters
+    + id: `-MCcM0aEKIrmtf_kUNAG` (string, required) - id da ferramenta
+    
++ Response 204
