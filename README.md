@@ -4,7 +4,7 @@ Um simples repositório para gerenciar ferramentas.
 
 ## Começando
 
-### Dependências
+### Ferramentas
 
 * Apache NetBeans IDE 12
 * Tomcat 8
@@ -18,7 +18,7 @@ Um simples repositório para gerenciar ferramentas.
 
 ## Ajuda
 
-Consulte o arquivo [apiary.apib](apiary.apib) para documentação.
+Consulte o link [vuttr14.docs.apiary.io](https://vuttr14.docs.apiary.io) para documentação.
 
 ## Autor
 
