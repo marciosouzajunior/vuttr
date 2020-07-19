@@ -18,9 +18,9 @@ Um simples repositório para gerenciar ferramentas.
 
 ## Ajuda
 
-Consulte o arquivo apiary.apib para documentação.
+Consulte o arquivo [apiary.apib](apiary.apib) para documentação.
 
 ## Autor
 
-Márcio de Souza Júnior
-marciojunior.dev
+Márcio de Souza Júnior<br>
+[marciojunior.dev](https://marciojunior.dev)
